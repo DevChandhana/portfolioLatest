@@ -17,25 +17,25 @@ const Contact = () => {
             <div className="flex justify-center ">
               <input
                 placeholder="Your Email"
-                className="bg-transparent border h-12 w-96 my-4 p-2 rounded-md border-blue-800"
+                className="bg-transparent border h-12 md:w-96 w-60 my-4 p-2 rounded-md border-blue-800"
               />
             </div>
             <div className="flex justify-center">
               <input
                 placeholder="Your Name"
-                className="bg-transparent border h-12 w-96 my-4 p-2 rounded-md border-blue-800"
+                className="bg-transparent border h-12 md:w-96 w-60 my-4 p-2 rounded-md border-blue-800"
               />
             </div>
-            <div>
+            <div className="flex justify-center">
               <input
                 placeholder="Your Number"
-                className="bg-transparent border h-12 w-96 my-4 p-2 rounded-md border-blue-800"
+                className="bg-transparent border h-12 md:w-96 w-60 my-4 p-2 rounded-md border-blue-800"
               />
             </div>
             <div className="flex justify-center">
               <textarea
                 placeholder="Message"
-                className="bg-transparent border h-18 w-96 my-4 p-2 rounded-md border-blue-800"
+                className="bg-transparent border h-18 md:w-96 w-60 my-4 p-2 rounded-md border-blue-800"
               />
             </div>
             <div className="flex justify-center">

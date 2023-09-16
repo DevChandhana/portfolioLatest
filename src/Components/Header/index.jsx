@@ -41,21 +41,23 @@ const Header = () => {
           </div>
         </div>
         <div
-          className={`  bg-black md:flex mx-60  md:mx-0 transition-all duration-700  ease-out  ${
+          className={`  bg-black md:flex mx-24  md:mx-0 transition-all duration-700  ease-out  ${
             !isOpen ? " top-30" : " absolute top-[-400px]"
           }`}
         >
           <div className="md:flex">
             {links.map((item) => (
-              <Link
-                className="font-semibold text-xl mx-6 cursor-pointer"
-                duration={500}
-                smooth={true}
-                spy={true}
-                to={item.name}
-              >
-                {item.name}
-              </Link>
+              <div>
+                <Link
+                  className="font-semibold text-xl mx-6 cursor-pointer"
+                  duration={500}
+                  smooth={true}
+                  spy={true}
+                  to={item.name}
+                >
+                  {item.name}
+                </Link>
+              </div>
             ))}
           </div>
           <button className="bg-blue-500 p-1 rounded  mx-4 mt-4 md:mt-0 md:mx-4 ">

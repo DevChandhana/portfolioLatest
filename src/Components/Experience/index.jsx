@@ -65,7 +65,7 @@ const Experience = () => {
           <div>
             <div>
               {exp.map((item) => (
-                <div className="border rounded-md border-blue-500 p-3 my-4 w-[570px] shadow-blue-500 shadow-sm">
+                <div className="border rounded-md border-blue-500 p-3 my-4 md:w-[570px] shadow-blue-500 shadow-sm">
                   <h1 className="text-slate-100 text-xl font-bold">
                     {item.Role}
                   </h1>

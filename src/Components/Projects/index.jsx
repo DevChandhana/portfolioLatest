@@ -31,9 +31,9 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-wrap justify-center w-9/12 md:ml-32 lg:ml-56 gap-7 self-center ">
+        <div className="flex flex-wrap justify-center md:w-9/12 md:ml-32 lg:ml-56 gap-7 self-center ">
           {projects.map((data) => (
-            <div className="border border-blue-500 rounded-md w-96 p-3 shadow-md shadow-blue-500 hover:scale-105 transition-transform duration-300 h-[600px] ease-in-out">
+            <div className="border border-blue-500 rounded-md md:w-96 p-3 shadow-md shadow-blue-500 hover:scale-105 transition-transform duration-300 h-[600px] ease-in-out">
               {data.img ? (
                 <img src={data.img} alt="proj img" className="h-48 w-80 ml-5" />
               ) : (
