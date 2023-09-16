@@ -3,7 +3,9 @@ import Header from "./Components/Header";
 import Banner from "./Components/Banner";
 import Skills from "./Components/Skills";
 import Experience from "./Components/Experience";
-
+import Footer from "./Components/Footer";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
 function App() {
   return (
     <div className="App">
@@ -11,7 +13,9 @@ function App() {
       <Banner />
       <Skills />
       <Experience />
-      <h1>Im working with bun woooo !!! 🥹 </h1>
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }

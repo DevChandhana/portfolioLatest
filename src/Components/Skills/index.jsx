@@ -9,14 +9,18 @@ const Skills = () => {
     { name: "Redux", icon: require("../../assets/redux.png") },
   ];
   return (
-    <div className="w-screen shadow-lg shadow-purple-700 ">
+    <div id="Skills" className="w-screen shadow-lg shadow-purple-700 ">
       <h1 className="text-2xl font-bold md:ml-72 my-10">Below are my skills</h1>
 
       <div className="flex flex-wrap justify-center   ">
         <div className="md:flex flex-wrap mx-2">
           {skills.map((item) => (
             <div className="rounded-2xl p-1 m-6 border-white border flex items-center gap-2 mx-0 md:mx-4 mt-4 md:mt-0">
-              <img src={item.icon} style={{ height: 20, width: 20 }} />
+              <img
+                src={item.icon}
+                style={{ height: 20, width: 20 }}
+                alt="items"
+              />
               <p>{item.name}</p>
             </div>
           ))}

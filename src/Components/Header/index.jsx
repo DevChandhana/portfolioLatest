@@ -4,6 +4,7 @@ import {
   QueueListIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -12,7 +13,7 @@ const Header = () => {
     { name: "Skills" },
     { name: "Experience" },
     { name: "Projects" },
-    { name: "Education" },
+    { name: "Contact" },
   ];
   return (
     <div className=" shadow-sm md:shadow-blue-200 w-screen bg-black">
@@ -46,15 +47,24 @@ const Header = () => {
         >
           <div className="md:flex">
             {links.map((item) => (
-              <ul>
-                <a className="font-semibold text-xl mx-6 cursor-pointer">
-                  {item.name}
-                </a>
-              </ul>
+              <Link
+                className="font-semibold text-xl mx-6 cursor-pointer"
+                duration={500}
+                smooth={true}
+                spy={true}
+                to={item.name}
+              >
+                {item.name}
+              </Link>
             ))}
           </div>
           <button className="bg-blue-500 p-1 rounded  mx-4 mt-4 md:mt-0 md:mx-4 ">
-            <p className="font-semibold text-xl mx-6 cursor-pointer">Github</p>
+            <a
+              className="font-semibold text-xl mx-6 cursor-pointer"
+              href="https://github.com/DevChandhana"
+            >
+              Github
+            </a>
           </button>
         </div>
       </div>
